@@ -1,0 +1,111 @@
+body{
+	font-family:sans-serif;
+	background-color: white;
+	height: 100%;
+	padding: 0;
+}
+
+h1 {
+	text-decoration: underline;
+}
+
+h5 {
+	line-height: 25px !important;
+	font-size: 16px !important;
+}
+
+a {
+	color: orange;
+}
+a:hover {
+	color: orangered;
+}
+
+#n{
+	fill:  orange;
+	stroke: orangered;
+	stroke-width:1px;
+	opacity: 0.75;
+}
+
+.axis{
+	font-size: 10;
+	stroke-opacity:0.2;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.domain{
+	fill:none;
+	stroke:#000;
+}
+.tick line{
+	stroke:#000;
+}
+
+#mrange, #nrange {
+	width: 50%
+}
+
+.container {
+	padding-top: 5px;
+}
+
+.container__content--screen {
+	height: 100%;
+	padding-top: 10%;
+}
+
+.container__content__fft-image {
+	margin-top:50px;
+	margin-bottom: 50px;
+}
+
+.container__content__real-plane,
+.container__content__complex-plane,
+.container__content__real-plane--result,
+.container__content__complex-plane--result {
+	background: rgba(0,0,0,0.025);
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 65px;
+}
+
+.container__content__links{
+	margin-top: 10px;
+}
+
+.container__content__links a{
+	color: lightgray;
+}
+
+.container__content__links a:hover{
+	color: gray;
+}
+
+.right{
+	background-color: white;
+}
+
+.left{
+	background-color: white;
+}
+
+#refresh, #update, #update-transform {
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+input {
+	width: 100% !important;
+	margin-top: 15px;
+}
+
+
+
