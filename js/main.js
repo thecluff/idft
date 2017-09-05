@@ -113,7 +113,7 @@ function transformUpdate(){
 }
 
 function processVector() {
-    var fourier2DArray = fourier.dftSimple(realArray, imagArray);
+    var fourier2DArray = dft(realArray, imagArray);
     var fourier1DArray = Array.prototype.concat.apply([], fourier2DArray);
     var n = document.getElementById('nrange').value;
     var fourierReal = fourier1DArray.slice(0, 256);
@@ -138,7 +138,7 @@ function restoreVector() {
     var processedVector = processVector();
     var fourierReal = processedVector[0];
     var fourierImag = processedVector[1];
-    var restored2DArray = fourier.idft(fourierReal, fourierImag),
+    var restored2DArray = idft(fourierReal, fourierImag),
         restored1DArray = Array.prototype.concat.apply([], restored2DArray);
     var restoredRealArray = restored1DArray.slice(0, 256);
     var restoredImagArray = restored1DArray.slice(256);
